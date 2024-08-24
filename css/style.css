@@ -1,0 +1,420 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --section-color: #eff7fa;
+    --gray-color: #7e8281;
+    --black-color: #3d3e3e;
+    --gold-color: #564b10;
+}
+
+
+body {
+    background-color:#000;
+}
+img {
+    border-radius: 20px;
+}
+/*google-font*/
+
+.cairo-uniquifier {
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+  
+  /*google font*/
+  
+/* Start-Navbar */
+
+.navbar {
+    font-size: 25px;
+    text-transform: capitalize;
+    width: 100%;
+    border: 3px solid;
+     border-radius: 10px;
+    position: fixed;
+    top: 0;
+    opacity: .7;
+    border-style: solid;
+    background-color: black;
+    border: 20px;
+    margin-top: -5px;
+    z-index: 1;
+}
+
+
+.navbar-brand img {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    position: relative;
+    background-color: var(--section-color);
+    animation: rotate 10s  linear alternate;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width:500px) and (max-width:2000px) {
+    .navbar-brand {
+        font-size: 29px;
+    }
+}
+
+@media (max-width:500px) {
+    .navbar-brand img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+}
+.navbar-brand:hover {
+    color: var(--red-color);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar-toggler-icon {
+    border-radius: 5px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: black;
+    background: white;
+}
+
+@media (min-width:500px) and (max-width:2000px) {
+    .navbar-toggler-icon {
+        font-size: 35px;
+        padding: 3px;
+        border-radius: 30%;
+        width: 50px;
+        height: 50px;
+    }
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--red-color);
+    transition: 0.4s ease-in;
+}
+
+/* End-Navbar */
+
+/* Start-Home-Page */
+
+
+.hero-header {
+    background-image: url(../basicsphoto/logo.jpg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size:cover ;
+    background-size: 100%;
+}
+
+
+.hero-header h1 {
+    font-size: 50px;
+    top: -50px;
+    font-style: italic;
+}
+
+@media (min-width:320px) and (max-width:500px) {
+    .hero-header h1 {
+        font-size: 28px;
+        top: -50px;
+    }
+
+    .hero-header a {
+        position: relative;
+        left: 13px;
+        top: -50px;
+    }
+    
+}
+
+
+.hero-header a {
+    color: white;
+    background-color: black;
+    border-color: black;
+    font-style: italic;
+}
+
+.hero-header a:hover {
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+
+/* End-Home-Page */
+
+/* Start-Talk-Page */
+.info h2 {
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.info p {
+    font-style: italic;
+}
+.main-title h2 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.home h2 {
+    font-size: 23px;
+    color: #eff7fa;
+}
+
+.home p {
+    font-size: 15px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* End-Talk-Page */
+
+.photos img {
+    border-color: black;
+
+}
+
+.photos img:hover {
+    border-color: #eff7fa;
+}
+
+
+@keyframes quote1 {
+    form {
+        transform: scale(.9);
+    }
+
+    to {
+        transform: scale(1.1);
+        color: #ff3150;
+    }
+}
+
+.back-home-page a {
+    text-decoration: none;
+}
+
+/* Start-Footer- */
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer li a {
+    color: white;
+    padding: 10px 20px;
+    font-size: 25px;
+}
+
+/* End-Footer- */
+
+
+/* Start-Gallery-Page- */
+
+@media (min-width:300px) and (max-width:500px) {
+    .social a {
+        display: block;
+    }
+}
+
+.social a {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.fahone img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    animation: rotate2 10s  linear infinite;
+}
+
+@keyframes rotate2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.fahone {
+    padding-top: 60px;
+    color: black;
+    background-image: url(../indexphoto/IMG_0776.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size:cover ;
+}
+.fahone h1 {
+    font-style: italic;
+}
+.fahone p {
+    font-style:italic ;
+    font-size: 20px;
+}
+@media (min-width:320px) and (max-width:500px) {
+    .fahone img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+}
+
+/* End-Gallery-Page- */
+
+/* Start-Contact-Page- */
+
+.contact h2 {
+    color: white;
+    text-transform: capitalize;
+    padding-left: 20px;
+}
+
+.contact p {
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+
+.phonenumber h2 {
+    color: white;
+}
+
+.phonenumber a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.start-icons a {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/*End-Contact-Page- */
+
+.photoss img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    animation: rotate 60s linear infinite;
+    position: relative;
+}
+
+@media (max-width:380px) {
+    .photoss img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+}
+
+.farag p {
+    padding-top: 10px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.quote a {
+    top: 600px;
+    color: white;
+    position: fixed;
+    z-index: 1;
+    animation: quote1 1s linear infinite alternate;
+}
+
+@media (min-width:320px)and (max-width:500px) {
+    .quote a {
+        font-size: 12px;
+    }
+}
+
+@media (min-width:501px) and (max-width:1000px) {
+    .quote a {
+        display: none;
+    }
+}
+
+
+.quote-1 input {
+    padding:10px;
+    outline: none;
+    border: 2px solid #efefef;
+    border-radius: 10px;
+}
+.quote-1 input:hover {
+    background-color: #efefef;
+    border: 2px solid #efefef;
+}
+.quote-1 input:focus {
+    background-color: #efefef;
+}
+.qquote h1 {
+    color: black;
+}
+
+.qquote img {
+    width: 200px;
+    height: 200px;
+    border-radius: 1px !important;
+    margin: auto;
+    display: flex;
+}
+.back-home-page a {
+    color: #fff;
+    background-color: #000;
+    padding: 8px 15px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+.btns button {
+    padding: 8px 30px;
+    width: 50%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #0ec20e;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 12px;
+}
